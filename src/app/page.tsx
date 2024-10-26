@@ -1,16 +1,16 @@
-import Image from "next/image";
-import Register from "./pages/authentication/register";
-import SignUp from "./pages/authentication/SignUp";
-import 'antd/dist/reset.css';
+import Header from "@/components/header.component";
 
-
-export default function Home() {
+export default async function Home() {
   return (
     <>
-      <div className="flex justify-center items-center">
-        <SignUp />
-        {/* <Register/> */}
-      </div>
+      <Header />
+      <section className="bg-ct-blue-600 min-h-screen pt-20">
+        <div className="max-w-4xl mx-auto bg-ct-dark-100 rounded-md h-[20rem] flex justify-center items-center">
+          <p className="text-3xl font-semibold">
+            Authentication for user
+          </p>
+        </div>
+      </section>
     </>
   );
 }
